@@ -243,6 +243,16 @@ nav{
     /* width: 100%; */
 }
 
+@media only screen and (max-width: 992px) {
+    .search_block .main-div form{
+        flex-wrap: wrap;
+    }
+    .search_block .main-div form .input-div{
+        width: 50%;
+    }
+    
+}
+
 @media only screen and (max-width: 767px) {
     .search_block .main-div form{
         flex-wrap: wrap;
@@ -742,6 +752,18 @@ section{
 .mobile_nav_menu .mobile_nav_item.active .mobile_nav_line{
         width: 50%;
         transition: all 0.4s ease-in-out;
+    }
+
+    .mobile_nav_item.mobile_nav_btn{
+        margin-top: 30px;
+    }
+    .mobile_nav_item .btn-1{
+        border: 1px solid #0e0e0e;
+        padding: 10px 25px;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #0e0e0e;
+        margin-top: 20px;
     }
 
 
