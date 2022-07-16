@@ -59,6 +59,30 @@ body{
 
 }
 
+.is-slanted-top-left{
+    -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% calc(0% + 4rem));
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% calc(0% + 4rem));
+}
+.is-slanted-bottom-left{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 90%);
+     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 90%);
+
+}
+
+
+@media only screen and (max-width: 767px)  {
+    .qoute{
+        margin-top: 0;
+        padding-top: 80px;
+    }    
+}
+@media only screen and (max-width: 767px)  {
+    .total-footer{
+        flex-direction: column-reverse;
+        }    
+}
+
+
 nav{
     display: flex;
     align-items: center;
@@ -134,10 +158,10 @@ nav{
 
 
 .hero_numbers{
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 4em;
+    gap: 4em; */
 
 }
 
@@ -311,11 +335,9 @@ input[type="text"]{
 }
 
 
-
-
 .serv-list{
     display: flex;
-    gap: 4em;
+    gap: 2em;
     flex-wrap: wrap;
 
 }
